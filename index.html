@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>THE SEVEN DEADLY SINS </title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			font-family: "Copperplate", "Papyrus", fantasy;
+			background-image: linear-gradient(#9E4784,#66347F,#66347F,#9E4784);
+		}
+		ul a.active{
+					background-color: #9E4784;
+					color: #66347F;
+					}
+		.home{
+			text-shadow: 2px 3px #66347F;
+			color: #9E4784;
+			}
+		
+		.Pone{
+			float: left;
+			text-align: left;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 20px;
+			color: #37306B;
+			}
+			
+		ul {
+			background-image: linear-gradient(#66347F,#66347F,#9E4784);
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #9E4784;
+		}
+
+		li {
+			float: right;
+		}
+
+		li a {
+			display: block;
+			color:  #9E4784;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			
+		}
+
+		li a:hover {
+			background-color: #9E4784;
+			color: #66347F;
+			text-transform: uppercase;
+		}
+		
+		/* Slider styling */
+		.slider {
+			width: 100%;
+			height: 10%;
+			margin: 20px auto;
+			overflow: hidden;
+			position: relative;
+		}
+		
+		.slide {
+			display: none;
+			position: center;
+			top: 0%;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+		
+		.slide img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}	
+		
+		/* frame video */
+		.frame{
+				padding: 0%;
+				}
+				
+		iframe{
+				width: 100%;
+				height: 500px;
+				}
+	</style>
+</head>
+<body>
+<ul>
+		<li><a href="About Me.html">About Me</a></li>
+		<li><a href="Characters.html">Characters</a></li>
+		<li><a href="Plot.html">Plot</a></li>
+		<li><a href="Home.html" class="active">Home</a></li>
+	</ul>
+	
+	<!-- Slider -->
+	<div class="slider">
+		<div class="slide">
+			<img src="sins.jpg">
+		</div>
+		<div class="slide">
+			<img src="seven.jpg">
+		</div>
+		<div class="slide">
+			<img src="deadly.jpg">
+		</div>
+	</div>
+	
+	<br>
+	
+	<div class="home">
+	<h1 style="text-align:center;"> THE SEVEN DEADLY SINS </h1>
+	</div>
+	<br>
+	<div class="Pone">
+	<p style="text-align: justify; margin-right:10px;"><strong>The Seven Deadly Sins </strong>
+			(Japanese: 七つの大罪, Hepburn: Nanatsu no Taizai) is a Japanese fantasy manga series written and illustrated by Nakaba Suzuki. It was serialized in Kodansha's Weekly Shōnen Magazine from October 2012 to March 2020, with the chapters collected into 41 tankōbon volumes. Featuring a setting similar to the European Middle Ages, the story follows a titular group of knights representing the seven deadly sins. The manga has been licensed by Kodansha USA for English publication in North America, while the chapters were released digitally by Crunchyroll in over 170 countries as they were published in Japan.</p>
+
+<p>A-1 Pictures adapted the series into a three-season anime television series that ran from October 2014 to June 2018, and one theatrical film: Prisoners of the Sky. Studio Deen produced two further seasons that ran from October 2019 to June 2021, and a second theatrical film: Cursed by Light. Funimation licensed the home video rights to the first season. Finally, Netflix acquired the exclusive English streaming rights to the anime, while releasing the third (two-part) anime film: Grudge of Edinburgh during 2022–2023.</p>
+
+<p>In 2015, The Seven Deadly Sins won the 39th Kodansha Manga Award for the shōnen category. As of November 2022, the manga had over 38 million copies in circulation, making it one of the best-selling manga series.</p>
+	</div>
+	<div class="frame">
+	<iframe src="https://youtube.com/embed/hskfrLEkrxc?playlist=hskfrLEkrxc&loop=1">
+	</iframe>
+	</div>
+	<br>
+	
+	<script>
+		// Slider functionality
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("slide");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}    
+			slides[slideIndex-1].style.display = "block";  
+			setTimeout(showSlides, 5000); // Change image every 3 seconds
+		}
+		
+		// Responsive navbar functionality
+	
+	</script>
+</body>
+</html>
+
+		
